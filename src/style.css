@@ -53,7 +53,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    
+
     width: 100vw;
     height: 7.75rem;
     padding: 0 1rem;
@@ -175,7 +175,7 @@ ul {
 
 #counter {
     background-color: var(--color-primary);
-    
+
     color: #fff;
     text-transform: uppercase;
 }
@@ -205,7 +205,7 @@ ul {
     padding: 4.735rem 1rem;
 }
 
-.institucional__image{
+.institucional__image {
     max-width: 550px;
 }
 
@@ -240,12 +240,12 @@ ul {
     box-shadow: 0 1rem 1rem #0006;
 }
 
-.quote{
+.quote {
     background-image: url(./images/parallax.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
 
 .quote__container {
@@ -260,7 +260,7 @@ ul {
     padding: 5.625rem 4.375rem;
 }
 
-.quote__copy h6{
+.quote__copy h6 {
     font-weight: 400;
     font-size: .9375rem;
     letter-spacing: .1875rem;
@@ -270,7 +270,7 @@ ul {
     margin: 0;
 }
 
-.quote__copy h2{
+.quote__copy h2 {
     font-size: 5rem;
     line-height: 5rem;
     text-transform: uppercase;
@@ -278,12 +278,127 @@ ul {
     margin: 1.875rem 0;
 }
 
-.quote__copy h2 span{
+.quote__copy h2 span {
     display: block;
+
+    .footer .logo-studion {
+        justify-self: start;
+    }
 }
 
-.btn--quote{
+.footer__form {
+    justify-self: center;
+}
+
+.footer__social {
+    justify-self: end;
+}
+
+.btn--quote {
     color: var(--color-copy);
     border-color: var(--color-copy);
     background: unset;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    padding: 5.25rem 0 3.75rem 0;
+}
+
+.footer .logo-studion {
+    justify-self: start;
+    margin: 0;
+}
+
+.logo-studion__subtitle {
+    display: block;
+}
+
+.footer__form {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 10ch auto;
+    gap: 1.25rem;
+}
+
+.footer__email {
+    display: grid;
+    grid-template-columns: auto 3.375rem;
+    width: 100%;
+}
+
+.footer__form input{
+    width: 100%;
+    background-color: var(--color-primary);
+    margin: unset;
+    padding: 1rem;
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    border: unset;
+}
+
+.footer__form input::placeholder{
+    color: #000;
+}
+
+.footer__form input:focus{
+    outline: unset;
+}
+
+.footer__form button{
+    cursor: pointer;
+    height: 100%;
+    transition: 0.3s all ease;
+    border: unset;
+}
+
+.footer__form button:hover{
+    color: #fff;
+    background-color: var(--color-copy);
+}
+
+.footer__form label {
+    font-size: .875rem;
+    font-size: 300;
+    text-align: center;
+}
+
+.footer__social {
+    justify-self: end;
+}
+
+.footer__social a,
+.footer__social a:visited,
+.footer__social a:active{
+    color: #fff;
+    margin-left: 0.2rem;
+}
+
+.footer__social a .fa-twitter,
+.footer__social a:visited .fa-twitter,
+.footer__social a:active .fa-twitter{
+    color: #000;
+    margin-left: 0.2rem;
+}
+
+.footer hr{
+    border-color: #fff4;
+    margin: 0;
+}
+
+.footer p{
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 300;
+    margin: 2.5rem 0;
 }
